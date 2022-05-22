@@ -1,0 +1,24 @@
+{
+  "name": "nm-php",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "nativeMessaging", 
+    "tabs",     
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://*.github.com/*"
+    ],
+    "ids": [
+      "*"
+  ]},
+  "action": {},
+  "author": "guest271314"
+}
