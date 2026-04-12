@@ -1,24 +1,14 @@
 {
   "name": "nm-php",
+  "short_name": "nm_php",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": [
-    "nativeMessaging", 
-    "tabs",     
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback"
-  ],
-  "host_permissions": ["<all_urls>"],
+  "permissions": ["nativeMessaging"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
-  "externally_connectable": {
-    "matches": [
-      "*://*.github.com/*"
-    ],
-    "ids": [
-      "*"
-  ]},
   "action": {},
-  "author": "guest271314"
+  "author": "guest271314",
+  "homepage_url": "https://github.com/guest271314/native-messaging-php"
 }
